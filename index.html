@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls">
+            <button onclick="startGame()">Start Game</button>
+            <label for="foodSettings">Food Settings:</label>
+            <select id="foodSettings" onchange="changeFoodSettings(this.value)">
+                <option value="normal">Normal</option>
+                <option value="double">Double</option>
+            </select>
+            <label for="snakeColor">Snake Color:</label>
+            <select id="snakeColor" onchange="changeSnakeColor(this.value)">
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+        
+    </body>
